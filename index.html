@@ -1,0 +1,665 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link href="css/jquery.formstyler.css" rel="stylesheet" />
+    <link href="css/jquery.formstyler.theme.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css/jquery.rateyo.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Landing</title>
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header__top">
+                <a class="header__top-logo" href="#" aria-label="Логотип">
+                    <img src="images/icon/logo.png" alt="Лого">
+                </a>
+                <nav class="header__top-menu">
+                    <ul class="header__top-list">
+                        <li class="header__top-item">
+                            <form class="header__top-filter" action="$">
+                                <select class="header__top-select select-style">
+                                    <option value="">Категории</option>
+                                    <option value="">1</option>
+                                    <option value="">2</option>
+                                </select>
+                            </form>
+                        </li>
+                        <li class="header__top-item">
+                            <form class="header__top-filter" action="$">
+                                <select class="header__top-select select-style">
+                                    <option value="">Стоимость</option>
+                                    <option value="">1</option>
+                                    <option value="">2</option>
+                                </select>
+                            </form>
+                        </li>
+                        <li class="header__top-item">
+                            <a class="header__top-btn" href="#">Войти</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="header__info">
+                <div class="header__info-offer">
+                    <h1 class="header__info-title">
+                        Мы заново изобретаем
+                        жизнь в квартире
+                    </h1>
+                    <p class="header__info-text">
+                        Попрощайтесь с ловушкой в ​​аренде.
+                        Участники Landing имеют доступ к тысячам
+                        квартир с гибкой арендой.
+                    </p>
+                    <form class="header__info-form">
+                        <label class="header__form-label" for="input__where">Место расположения
+                            <input class="header__form-input" type="text" placeholder="Где?" id="input__where">
+                        </label>
+                        <label class="header__form-label" for="input__long">Даты
+                            <input class="header__form-input" type="" placeholder="На сколько?" id="input__long">
+                        </label>
+                        <button class="header__form-btn" type="submit" aria-label="Мобильное меню">
+                            <svg width="17" height="16" viewBox="0 0 17 16" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0_1_147)">
+                                    <path
+                                        d="M7.70536 13.5323C11.2197 13.5323 14.0687 10.702 14.0687 7.21059C14.0687 3.71923 11.2197 0.888916 7.70536 0.888916C4.19103 0.888916 1.3421 3.71923 1.3421 7.21059C1.3421 10.702 4.19103 13.5323 7.70536 13.5323Z"
+                                        stroke="black" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                    <path d="M15.6578 15.111L12.1978 11.6736" stroke="black" stroke-width="2"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+                                </g>
+                                <defs>
+                                    <clipPath id="clip0_1_147">
+                                        <rect width="17" height="16" fill="white" />
+                                    </clipPath>
+                                </defs>
+                            </svg>
+                            Поиск
+                        </button>
+                    </form>
+                </div>
+                <img class="header__info-img" src="images/photo/header__photo.jpg" alt="Фото"
+                    style="width: 698px;height: 680px;">
+            </div>
+        </div>
+    </header>
+    <main class="main">
+        <section class="advantages">
+            <div class="container">
+                <div class="advantages__inner">
+                    <div class="advantages__top">
+                        <h3 class="advantages__title title">
+                            Открой жизнь с помощью
+                            <span>Landing Membership</span>
+                        </h3>
+                        <p class="advantages__price">
+                            Годовое членство $199
+                        </p>
+                        <a class="advantages__link" href="#">Узнать больше</a>
+                    </div>
+                    <ul class="advantages__items">
+                        <li class="advantages__item advantages__item--bird">
+                            <h4 class="advantages__item-title">Арендуй как хочешь</h4>
+                            <p class="advantages__item-text">
+                                Пребывание от одного до 12+ месяцев с возможностью перевода в другие дома в сети
+                                Landing. <a class="advantages__item-link" href="#">Узнать больше</a>
+                            </p>
+                        </li>
+                        <li class="advantages__item advantages__item--scooter">
+                            <h4 class="advantages__item-title">Прыгайте или оставайтесь на месте</h4>
+                            <p class="advantages__item-text">
+                                Мы всегда расширяем нашу сеть, чтобы предоставить вам лучший выбор и варианты.
+                                <a class="advantages__item-link" href="#">Узнать больше</a>
+                            </p>
+                        </li>
+                        <li class="advantages__item advantages__item--pig">
+                            <h4 class="advantages__item-title">Держите наличные в кармане</h4>
+                            <p class="advantages__item-text">
+                                Никаких сборов за подачу заявки или залога. <a class="advantages__item-link"
+                                    href="#">Узнать больше</a>
+                            </p>
+                        </li>
+                        <li class="advantages__item advantages__item--location">
+                            <h4 class="advantages__item-title">Наслаждайтесь гарантированным спокойствием</h4>
+                            <p class="advantages__item-text">
+                                Если вы не полностью удовлетворены в первую неделю, мы исправим это. <a
+                                    class="advantages__item-link" href="#">Узнать больше</a>
+                            </p>
+                        </li>
+                        <li class="advantages__item advantages__item--drinks">
+                            <h4 class="advantages__item-title">Получите до 7 бесплатных дней в пути</h4>
+                            <p class="advantages__item-text">
+                                Оставайтесь с Landing в следующей поездке. Получите до 7 бесплатных дней каждый год. <a
+                                    class="advantages__item-link" href="#">Узнать больше</a>
+                            </p>
+                        </li>
+                        <li class="advantages__item advantages__item--support">
+                            <h4 class="advantages__item-title">Будьте спокойны с круглосуточной поддержкой участников
+                            </h4>
+                            <p class="advantages__item-text">
+                                Вопросы могут возникнуть в любое время, поэтому мы всегда готовы помочь.
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <section class="benefits">
+            <div class="container">
+                <div class="benefits__inner">
+                    <img class="benefits__img" src="images/photo/photo-1.png" alt="Фотография"
+                        style="width: 618px; height: 577px;">
+                    <div class="benefits__info">
+                        <h3 class="benefits__title title">
+                            Получите лучшие тарифы и еще больше свободы с Landing Explorer
+                        </h3>
+                        <div class="benefits__info-items">
+                            <div class="benefits__info-item benefits__info-item--coin">
+                                <h4 class="benefits__item-title">Лучшие цены</h4>
+                                <p class="benefits__item-text">
+                                    Участники Explorer всегда получают наши самые низкие месячные ставки.
+                                </p>
+                            </div>
+                            <div class="benefits__info-item benefits__info-item--case">
+                                <h4 class="benefits__item-title">Максимальная гибкость</h4>
+                                <p class="benefits__item-text">
+                                    Когда вы будете готовы к чему-то новому, просто сообщите об этом за 30 дней; нет
+                                    никакой платы за аренду или передачу.
+                                </p>
+                            </div>
+                            <div class="benefits__info-item benefits__info-item--map">
+                                <h4 class="benefits__item-title">Легкие переводы</h4>
+                                <p class="benefits__item-text">
+                                    Беспрепятственно перемещайтесь между квартирами Landing в любом месте и в любое
+                                    время.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="furnished">
+            <div class="container">
+                <div class="furnished__inner">
+                    <h2 class="furnished__title">
+                        <span>Landing Furnished</span>
+                        Наслаждайтесь всеми удобствами полностью
+                        меблированного дома Landing
+                    </h2>
+                    <div class="furnished__swiper-container swipper-container">
+                        <div class="furnished__swiper-wrapper swiper-wrapper">
+                            <a class="furnished__swiper-slide swiper-slide" href="#" aria-label="Слайд">
+                                <img class="furnished__swiper-img" src="images/photo/furnished-1.jpg" alt="Фотография"
+                                    style="width: 880px; height: 480px;">
+                                <p class="furnished__swiper-text">
+                                    <svg width="12" height="15" viewBox="0 0 12 15" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M0 5.66666C0 2.11967 2.87136 0 5.64706 0C8.42275 0 11.2941 2.11967 11.2941 5.66666C11.2941 9.42834 6.10314 14.6807 5.88191 14.9023C5.81979 14.965 5.73509 15 5.64706 15C5.55903 15 5.47433 14.965 5.4122 14.9023C5.19098 14.6807 0 9.42834 0 5.66666ZM3.53005 5.71003C3.53005 6.89614 4.47981 7.86072 5.64769 7.86072C6.81558 7.86072 7.76534 6.89614 7.76534 5.71003C7.76534 4.52393 6.81558 3.55934 5.64769 3.55934C4.47981 3.55934 3.53005 4.52393 3.53005 5.71003Z"
+                                            fill="black" />
+                                    </svg>
+                                    Grand Flats, Saint Louis
+                                </p>
+                            </a>
+                            <a class="furnished__swiper-slide swiper-slide" href="#" aria-label="Слайд">
+                                <img class="furnished__swiper-img" src="images/photo/furnished-2.jpg" alt="Фотография"
+                                    style="width: 880px; height: 480px;">
+                            </a>
+                            <a class="furnished__swiper-slide swiper-slide" href="#" aria-label="Слайд">
+                                <img class="furnished__swiper-img" src="images/photo/furnished-1.jpg" alt="Фотография"
+                                    style="width: 880px; height: 480px;">
+                                <p class="furnished__swiper-text">
+                                    <svg width="12" height="15" viewBox="0 0 12 15" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M0 5.66666C0 2.11967 2.87136 0 5.64706 0C8.42275 0 11.2941 2.11967 11.2941 5.66666C11.2941 9.42834 6.10314 14.6807 5.88191 14.9023C5.81979 14.965 5.73509 15 5.64706 15C5.55903 15 5.47433 14.965 5.4122 14.9023C5.19098 14.6807 0 9.42834 0 5.66666ZM3.53005 5.71003C3.53005 6.89614 4.47981 7.86072 5.64769 7.86072C6.81558 7.86072 7.76534 6.89614 7.76534 5.71003C7.76534 4.52393 6.81558 3.55934 5.64769 3.55934C4.47981 3.55934 3.53005 4.52393 3.53005 5.71003Z"
+                                            fill="black" />
+                                    </svg>
+                                    Grand Flats, Saint Louis
+                                </p>
+                            </a>
+                            <a class="furnished__swiper-slide swiper-slide" href="#" aria-label="Слайд">
+                                <img class="furnished__swiper-img" src="images/photo/furnished-2.jpg" alt="Фотография"
+                                    style="width: 880px; height: 480px;">
+                            </a>
+                        </div>
+                        <div class="swiper-button-next" aria-label="Стрелка вперед"></div>
+                        <div class="swiper-button-prev" aria-label="Стрелка назад"></div>
+                        <div class="swiper-scrollbar" aria-label="Скролл"></div>
+                    </div>
+                    <div class="furnished__includes">
+                        <h4 class="furnished__includes-title">Каждый лендинг включает в себя</h4>
+                        <ul class="furnished__includes-items">
+                            <li class="furnished__includes-item">
+                                <img class="furnished__includes-img" src="images/photo/includes/includes-1.jpg"
+                                    alt="Фотография">
+                                <p class="furnished__includes-name">
+                                    Удобная мебель собственного производства
+                                </p>
+                            </li>
+                            <li class="furnished__includes-item">
+                                <img class="furnished__includes-img" src="images/photo/includes/includes-2.jpg"
+                                    alt="Фотография">
+                                <p class="furnished__includes-name">
+                                    Роскошный матрас и постельное белье
+                                </p>
+                            </li>
+                            <li class="furnished__includes-item">
+                                <img class="furnished__includes-img" src="images/photo/includes/includes-3.jpg"
+                                    alt="Фотография">
+                                <p class="furnished__includes-name">
+                                    Полностью оборудованная кухня
+                                </p>
+                            </li>
+                            <li class="furnished__includes-item">
+                                <img class="furnished__includes-img" src="images/photo/includes/includes-4.jpg"
+                                    alt="Фотография">
+                                <p class="furnished__includes-name">
+                                    Выделенные рабочие места
+                                </p>
+                            </li>
+                            <li class="furnished__includes-item">
+                                <img class="furnished__includes-img" src="images/photo/includes/includes-5.jpg"
+                                    alt="Фотография">
+                                <p class="furnished__includes-name">
+                                    Смарт ТВ + Wi-Fi
+                                </p>
+                            </li>
+                            <li class="furnished__includes-item">
+                                <img class="furnished__includes-img" src="images/photo/includes/includes-6.jpg"
+                                    alt="Фотография">
+                                <p class="furnished__includes-name">
+                                    Туалетные принадлежности премиум-класса
+                                </p>
+                            </li>
+                            <li class="furnished__includes-item">
+                                <img class="furnished__includes-img" src="images/photo/includes/includes-7.jpg"
+                                    alt="Фотография">
+                                <p class="furnished__includes-name">
+                                    Много места для хранения
+                                </p>
+                            </li>
+                            <li class="furnished__includes-item">
+                                <img class="furnished__includes-img" src="images/photo/includes/includes-8.jpg"
+                                    alt="Фотография">
+                                <p class="furnished__includes-name">
+                                    Продуманные завершающие штрихи
+                                </p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="reviews">
+            <div class="container">
+                <div class="reviews__inner">
+                    <h3 class="reviews__title title">
+                        Посмотрите, что говорят наши участники
+                    </h3>
+                    <ul class="reviews__items">
+                        <li class="reviews__item">
+                            <div class="reviews__item-star star"></div>
+                            <div class="reviews__item-namebox">
+                                <p class="reviews__item-name">Васим А.</p>
+                                <p class="reviews__item-location">Форт-Лодердейл, Флорида</p>
+                            </div>
+                            <p class="reviews__item-text">
+                                Даже с консервативной точки зрения многоквартирные дома предполагают минимум
+                                трехмесячную аренду (аренда)... Если они и
+                                предлагают помесячную оплату, то зачастую это в два раза превышает арендную плату, и
+                                невероятно утомительно обставлять
+                                жилье, если вы будем жить там всего месяц.
+                            </p>
+                        </li>
+                        <li class="reviews__item">
+                            <div class="reviews__item-star star"></div>
+                            <div class="reviews__item-namebox">
+                                <p class="reviews__item-name">Майкл Х.</p>
+                                <p class="reviews__item-location">Тампа, Флорида</p>
+                            </div>
+                            <p class="reviews__item-text">
+                                Посадочные квартиры имеют все под солнцем. Когда мы приехали, мы привезли вещи, о
+                                которых, как мы думали, Лэндинг не
+                                узнает. Но у них это было - так что теперь у нас всего два
+                            </p>
+                        </li>
+                        <li class="reviews__item">
+                            <div class="reviews__item-star star"></div>
+                            <div class="reviews__item-namebox">
+                                <p class="reviews__item-name">Дэниел О.</p>
+                                <p class="reviews__item-location">Нэшвилл, Теннесси</p>
+                            </div>
+                            <p class="reviews__item-text">
+                                Самым большим преимуществом является гибкость, тот факт, что если я хочу жить где
+                                угодно, от Нэшвилла до Сиэтла, от
+                                Остина до Нью-Йорка, у меня есть способ сделать это. Лендинг делает мир доступным, как
+                                никогда раньше.
+                            </p>
+                        </li>
+                    </ul>
+                    <div class="reviews__partners">
+                        <img class="reviews__partners-item" src="images/photo/partners/wsj.png" alt="Партнер">
+                        <img class="reviews__partners-item" src="images/photo/partners/forbes.png" alt="Партнер">
+                        <img class="reviews__partners-item" src="images/photo/partners/bloomberg.png" alt="Партнер">
+                        <img class="reviews__partners-item" src="images/photo/partners/yahoo.png" alt="Партнер">
+                        <img class="reviews__partners-item" src="images/photo/partners/chicago.png" alt="Партнер">
+                        <img class="reviews__partners-item" src="images/photo/partners/curbed.png" alt="Партнер">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="cities">
+            <div class="container">
+                <div class="cities__inner">
+                    <div class="cities__top">
+                        <h3 class="cities__title title">
+                            Посмотрите, где участники любят жить
+                        </h3>
+                        <p class="cities__text">
+                            Мы предлагаем более 80 городов по всей территории США и призываем вас исследовать их с
+                            помощью бесплатного 7-дневного
+                            преимущества путешествия.
+                        </p>
+                    </div>
+                    <div class="cities__swiper-container swipper-container">
+                        <div class="cities__swiper-wrapper swiper-wrapper">
+                            <div class="cities__swiper-slide swiper-slide">
+                                <img class="cities__swiper-img" src="images/photo/cities/atlanta.jpg" alt="Фотография">
+                                <p class="cities__swiper-text">Атланта
+                                </p>
+                            </div>
+                            <div class="cities__swiper-slide swiper-slide">
+                                <img class="cities__swiper-img" src="images/photo/cities/tokio.jpg" alt="Фотография">
+                                <p class="cities__swiper-text">Токио
+                                </p>
+                            </div>
+                            <div class="cities__swiper-slide swiper-slide">
+                                <img class="cities__swiper-img" src="images/photo/cities/denver.jpg" alt="Фотография">
+                                <p class="cities__swiper-text">Денвер
+                                </p>
+                            </div>
+                            <div class="cities__swiper-slide swiper-slide">
+                                <img class="cities__swiper-img" src="images/photo/cities/austin.jpg" alt="Фотография">
+                                <p class="cities__swiper-text">Остин
+                                </p>
+                            </div>
+                            <div class="cities__swiper-slide swiper-slide">
+                                <img class="cities__swiper-img" src="images/photo/cities/new-york.jpg" alt="Фотография">
+                                <p class="cities__swiper-text">Нью-Йорк
+                                </p>
+                            </div>
+                            <div class="cities__swiper-slide swiper-slide">
+                                <img class="cities__swiper-img" src="images/photo/cities/tokio.jpg" alt="Фотография">
+                                <p class="cities__swiper-text">Токио
+                                </p>
+                            </div>
+                            <div class="cities__swiper-slide swiper-slide">
+                                <img class="cities__swiper-img" src="images/photo/cities/denver.jpg" alt="Фотография">
+                                <p class="cities__swiper-text">Денвер
+                                </p>
+                            </div>
+                            <div class="cities__swiper-slide swiper-slide">
+                                <img class="cities__swiper-img" src="images/photo/cities/tokio.jpg" alt="Фотография">
+                                <p class="cities__swiper-text">Токио
+                                </p>
+                            </div>
+                            <div class="cities__swiper-slide swiper-slide">
+                                <img class="cities__swiper-img" src="images/photo/cities/denver.jpg" alt="Фотография">
+                                <p class="cities__swiper-text">Денвер
+                                </p>
+                            </div>
+                        </div>
+                        <div class="swiper-button-next cities__swiper-button-next" aria-label="Стрелка вперед"></div>
+                        <div class="swiper-button-prev cities__swiper-button-prev" aria-label="Стрелка назад"></div>
+                        <div class="swiper-scrollbar" aria-label="Скролл"></div>
+                    </div>
+                    <div class="cities__favorite">
+                        <h4 class="cities__favorite-title">Другие наши любимые города</h4>
+                        <div class="cities__favorite-items">
+                            <ul class="cities__favorite-list">
+                                <li class="cities__favorite-item">
+                                    <a class="cities__favorite-link__subtitle">Майами</a>
+                                    <a class="cities__favorite-link" href="#">Флорида</a>
+                                </li>
+                                <li class="cities__favorite-item">
+                                    <a class="cities__favorite-link__subtitle">Лос-Анджелес</a>
+                                    <a class="cities__favorite-link" href="#">Калифорния</a>
+                                </li>
+                                <li class="cities__favorite-item">
+                                    <a class="cities__favorite-link__subtitle">Санкт-Петербург</a>
+                                    <a class="cities__favorite-link" href="#">Россия</a>
+                                </li>
+                                <li class="cities__favorite-item">
+                                    <a class="cities__favorite-link__subtitle">Боулдер</a>
+                                    <a class="cities__favorite-link" href="#">Колорадо</a>
+                                </li>
+                            </ul>
+                            <ul class="cities__favorite-list">
+                                <li class="cities__favorite-item">
+                                    <a class="cities__favorite-link__subtitle">Форт Лодердейл</a>
+                                    <a class="cities__favorite-link" href="#">Флорида</a>
+                                </li>
+                                <li class="cities__favorite-item">
+                                    <a class="cities__favorite-link__subtitle">Чарльстон</a>
+                                    <a class="cities__favorite-link" href="#">Южная Каролина</a>
+                                </li>
+                                <li class="cities__favorite-item">
+                                    <a class="cities__favorite-link__subtitle">Портленд</a>
+                                    <a class="cities__favorite-link" href="#">Орегон</a>
+                                </li>
+                                <li class="cities__favorite-item">
+                                    <a class="cities__favorite-link__subtitle">Шарлотта</a>
+                                    <a class="cities__favorite-link" href="#">Северная Каролина</a>
+                                </li>
+                            </ul>
+                            <ul class="cities__favorite-list">
+                                <li class="cities__favorite-item">
+                                    <a class="cities__favorite-link__subtitle">Солт-Лейк-Сити</a>
+                                    <a class="cities__favorite-link" href="#">Юта</a>
+                                </li>
+                                <li class="cities__favorite-item">
+                                    <a class="cities__favorite-link__subtitle">Нью-Йорк</a>
+                                    <a class="cities__favorite-link" href="#">Нью-Йорк</a>
+                                </li>
+                                <li class="cities__favorite-item">
+                                    <a class="cities__favorite-link__subtitle">Вашингтон</a>
+                                    <a class="cities__favorite-link" href="#">ОКРУГ КОЛУМБИЯ.</a>
+                                </li>
+                                <li class="cities__favorite-item">
+                                    <a class="cities__favorite-link__subtitle">Филадельфия</a>
+                                    <a class="cities__favorite-link" href="#">Пенсильвания</a>
+                                </li>
+                            </ul>
+                            <ul class="cities__favorite-list">
+                                <li class="cities__favorite-item">
+                                    <a class="cities__favorite-link__subtitle">Сан-Франциско</a>
+                                    <a class="cities__favorite-link" href="#">Калифорния</a>
+                                </li>
+                                <li class="cities__favorite-item">
+                                    <a class="cities__favorite-link__subtitle">Феникс</a>
+                                    <a class="cities__favorite-link" href="#">Аризона</a>
+                                </li>
+                                <li class="cities__favorite-item">
+                                    <a class="cities__favorite-link__subtitle">Балтимор</a>
+                                    <a class="cities__favorite-link" href="#">Мэриленд</a>
+                                </li>
+                                <li class="cities__favorite-item">
+                                    <a class="cities__favorite-link__subtitle">Оклахома-Сити</a>
+                                    <a class="cities__favorite-link" href="#">Оклахома</a>
+                                </li>
+                            </ul>
+                            <ul class="cities__favorite-list">
+                                <li class="cities__favorite-item">
+                                    <a class="cities__favorite-link__subtitle">Чикаго</a>
+                                    <a class="cities__favorite-link" href="#">Иллинойс</a>
+                                </li>
+                                <li class="cities__favorite-item">
+                                    <a class="cities__favorite-link__subtitle">Лас Вегас</a>
+                                    <a class="cities__favorite-link" href="#">Невада</a>
+                                </li>
+                                <li class="cities__favorite-item">
+                                    <a class="cities__favorite-link__subtitle">Форт-Уэрт</a>
+                                    <a class="cities__favorite-link" href="#">Техас</a>
+                                </li>
+                                <li class="cities__favorite-item">
+                                    <a class="cities__favorite-link__subtitle">Тампа</a>
+                                    <a class="cities__favorite-link" href="#">Флорида</a>
+                                </li>
+                            </ul>
+                            <ul class="cities__favorite-list">
+                                <li class="cities__favorite-item">
+                                    <a class="cities__favorite-link__subtitle">Бостон</a>
+                                    <a class="cities__favorite-link" href="#">Массачусетс</a>
+                                </li>
+                                <li class="cities__favorite-item">
+                                    <a class="cities__favorite-link__subtitle">Орландо</a>
+                                    <a class="cities__favorite-link" href="#">Флорида</a>
+                                </li>
+                                <li class="cities__favorite-item">
+                                    <a class="cities__favorite-link__subtitle">Ричмонд</a>
+                                    <a class="cities__favorite-link" href="#">Вирджиния</a>
+                                </li>
+                                <li class="cities__favorite-item">
+                                    <a class="cities__favorite-link__subtitle">Нэшвилл</a>
+                                    <a class="cities__favorite-link" href="#">Теннесси</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <a class="cities__favorite-btn" href="#" aria-label="Все города">Все города</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__inner">
+                <div class="footer__info">
+                    <p class="footer__text">Landing — это сеть сдаваемых в аренду меблированных квартир по всей стране.
+                    </p>
+                    <div class="footer__items">
+                        <ul class="footer__items-list">
+                            <li class="footer__list-item">
+                                <h5 class="footer__list-title">Города</h5>
+                            </li>
+                            <li class="footer__list-item">
+                                <a class="footer__list-link" href="#">Остин</a>
+                            </li>
+                            <li class="footer__list-item">
+                                <a class="footer__list-link" href="#">Бирмингем</a>
+                            </li>
+                            <li class="footer__list-item">
+                                <a class="footer__list-link" href="#">Бостон</a>
+                            </li>
+                            <li class="footer__list-item">
+                                <a class="footer__list-link" href="#">Чикаго</a>
+                            </li>
+                            <li class="footer__list-item">
+                                <a class="footer__list-link" href="#">Даллас</a>
+                            </li>
+                        </ul>
+                        <ul class="footer__items-list">
+                            <li class="footer__list-item">
+                                <h5 class="footer__list-title">Landing</h5>
+                            </li>
+                            <li class="footer__list-item">
+                                <a class="footer__list-link" href="#">Преимущества членства</a>
+                            </li>
+                            <li class="footer__list-item">
+                                <a class="footer__list-link" href="#">Блог</a>
+                            </li>
+                            <li class="footer__list-item">
+                                <a class="footer__list-link" href="#">О нас</a>
+                            </li>
+                            <li class="footer__list-item">
+                                <a class="footer__list-link" href="#">Приведи друга</a>
+                            </li>
+                            <li class="footer__list-item">
+                                <a class="footer__list-link" href="#">Стать хозяином</a>
+                            </li>
+                            <li class="footer__list-item">
+                                <a class="footer__list-link" href="#">Стать партнером</a>
+                            </li>
+                            <li class="footer__list-item">
+                                <a class="footer__list-link" href="#">Карьера</a>
+                            </li>
+                        </ul>
+                        <ul class="footer__items-list">
+                            <li class="footer__list-item">
+                                <h5 class="footer__list-title">Служба поддержки</h5>
+                            </li>
+                            <li class="footer__list-item">
+                                <a class="footer__list-link" href="#">Связаться с нами</a>
+                            </li>
+                            <li class="footer__list-item">
+                                <a class="footer__list-link" href="#">FAQ</a>
+                            </li>
+                            <li class="footer__list-item">
+                                <a class="footer__list-link" href="#">Условия использования</a>
+                            </li>
+                            <li class="footer__list-item">
+                                <a class="footer__list-link" href="#">Политика конфиденциальности</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer__credits">
+                    <p class="footer__credits-text">© Landing 2021. All rights reserved.</p>
+                    <div class="footer__credits-social">
+                        <span class="footer__credits-item">415-231-1701</span>
+                        <a class="footer__credits-item" href="#">
+                            <svg width="22" height="22" viewBox="0 0 22 22" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M11 0.811035C5.18991 0.811035 0.478271 5.48068 0.478271 11.239C0.478271 16.9973 5.18991 21.667 11 21.667C16.8101 21.667 21.5217 16.9973 21.5217 11.239C21.5217 5.48068 16.8101 0.811035 11 0.811035ZM15.8041 8.94166C15.8087 9.04429 15.811 9.1474 15.811 9.25098C15.811 12.4138 13.3819 16.0609 8.93968 16.0611H8.93985H8.93968C7.57583 16.0611 6.30668 15.6649 5.2379 14.986C5.42687 15.0081 5.61921 15.0191 5.81396 15.0191C6.94551 15.0191 7.98682 14.6365 8.8135 13.9944C7.75628 13.975 6.86491 13.2831 6.5573 12.332C6.70452 12.36 6.85592 12.3752 7.01117 12.3752C7.2316 12.3752 7.44514 12.3459 7.64807 12.291C6.54301 12.0716 5.71056 11.1037 5.71056 9.94471C5.71056 9.9339 5.71056 9.92424 5.71089 9.9142C6.03631 10.0935 6.40847 10.2014 6.80471 10.2135C6.15625 9.78469 5.72999 9.05161 5.72999 8.22117C5.72999 7.78265 5.8496 7.3718 6.05703 7.01808C7.24798 8.46638 9.02783 9.41885 11.035 9.51894C10.9936 9.34359 10.9723 9.16093 10.9723 8.97316C10.9723 7.65185 12.0538 6.57987 13.3875 6.57987C14.0822 6.57987 14.7097 6.8709 15.1504 7.33616C15.7006 7.22859 16.2172 7.02938 16.684 6.75522C16.5033 7.31388 16.1206 7.78265 15.6219 8.07908C16.1104 8.02116 16.5761 7.89275 17.0087 7.70213C16.6856 8.18219 16.2756 8.60385 15.8041 8.94166Z"
+                                    fill="black" fill-opacity="0.7" />
+                            </svg>
+                        </a>
+                        <a class="footer__credits-item" href="#">
+                            <svg width="22" height="22" viewBox="0 0 22 22" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M13.1428 11.1912C13.1428 12.3034 12.2412 13.2051 11.1289 13.2051C10.0166 13.2051 9.11499 12.3034 9.11499 11.1912C9.11499 10.0789 10.0166 9.17725 11.1289 9.17725C12.2412 9.17725 13.1428 10.0789 13.1428 11.1912Z"
+                                    fill="black" fill-opacity="0.7" />
+                                <path
+                                    d="M15.8385 7.62816C15.7417 7.36582 15.5873 7.12837 15.3866 6.93346C15.1917 6.73277 14.9544 6.57832 14.6919 6.48152C14.479 6.39883 14.1592 6.30042 13.5701 6.27361C12.9329 6.24455 12.7419 6.23828 11.1287 6.23828C9.51532 6.23828 9.32427 6.24438 8.68721 6.27344C8.09816 6.30042 7.77818 6.39883 7.56545 6.48152C7.30295 6.57832 7.06551 6.73277 6.87076 6.93346C6.67007 7.12837 6.51562 7.36566 6.41865 7.62816C6.33597 7.84105 6.23755 8.16102 6.21074 8.75008C6.18168 9.38713 6.17542 9.57819 6.17542 11.1916C6.17542 12.8047 6.18168 12.9958 6.21074 13.633C6.23755 14.2221 6.33597 14.5419 6.41865 14.7548C6.51562 15.0173 6.66991 15.2546 6.8706 15.4495C7.06551 15.6502 7.30279 15.8046 7.56529 15.9014C7.77818 15.9843 8.09816 16.0826 8.68721 16.1095C9.32427 16.1386 9.51516 16.1446 11.1285 16.1446C12.7421 16.1446 12.9331 16.1386 13.5699 16.1095C14.1591 16.0826 14.479 15.9843 14.6919 15.9014C15.2188 15.6982 15.6353 15.2817 15.8385 14.7548C15.9213 14.5419 16.0196 14.2221 16.0466 13.633C16.0757 12.9958 16.0818 12.8047 16.0818 11.1916C16.0818 9.57819 16.0757 9.38713 16.0466 8.75008C16.0198 8.16102 15.9214 7.84105 15.8385 7.62816ZM11.1287 14.2938C9.41513 14.2938 8.02606 12.905 8.02606 11.1914C8.02606 9.47785 9.41513 8.08893 11.1287 8.08893C12.842 8.08893 14.2311 9.47785 14.2311 11.1914C14.2311 12.905 12.842 14.2938 11.1287 14.2938ZM14.3538 8.69131C13.9534 8.69131 13.6288 8.36669 13.6288 7.96628C13.6288 7.56587 13.9534 7.24123 14.3538 7.24123C14.7542 7.24123 15.0789 7.56587 15.0789 7.96628C15.0787 8.36669 14.7542 8.69131 14.3538 8.69131Z"
+                                    fill="black" fill-opacity="0.7" />
+                                <path
+                                    d="M11.1289 0.669434C5.31881 0.669434 0.607178 5.38106 0.607178 11.1912C0.607178 17.0013 5.31881 21.7129 11.1289 21.7129C16.9391 21.7129 21.6507 17.0013 21.6507 11.1912C21.6507 5.38106 16.9391 0.669434 11.1289 0.669434ZM17.1343 13.682C17.105 14.3252 17.0028 14.7643 16.8534 15.1487C16.5396 15.9603 15.8981 16.6018 15.0865 16.9157C14.7022 17.065 14.263 17.1671 13.62 17.1965C12.9757 17.2259 12.7699 17.2329 11.129 17.2329C9.4881 17.2329 9.28244 17.2259 8.63799 17.1965C7.995 17.1671 7.55574 17.065 7.17154 16.9157C6.76824 16.764 6.40316 16.5263 6.10133 16.2187C5.79404 15.9171 5.55626 15.5519 5.40454 15.1487C5.25523 14.7645 5.15296 14.3252 5.12374 13.6822C5.09404 13.0378 5.08714 12.832 5.08714 11.1912C5.08714 9.55036 5.09404 9.34453 5.12358 8.70026C5.1528 8.05709 5.25491 7.61799 5.40422 7.23364C5.55594 6.8305 5.79387 6.46525 6.10133 6.16358C6.403 5.85613 6.76824 5.61836 7.17138 5.46664C7.55574 5.31733 7.99484 5.21522 8.63799 5.18584C9.28228 5.15646 9.4881 5.14939 11.1289 5.14939C12.7698 5.14939 12.9755 5.15646 13.6198 5.186C14.263 5.21522 14.7021 5.31733 15.0865 5.46648C15.4895 5.61819 15.8548 5.85613 16.1567 6.16358C16.4639 6.46541 16.7019 6.8305 16.8534 7.23364C17.0029 7.61799 17.105 8.05709 17.1344 8.70026C17.1638 9.34453 17.1707 9.55036 17.1707 11.1912C17.1707 12.832 17.1638 13.0378 17.1343 13.682Z"
+                                    fill="black" fill-opacity="0.7" />
+                            </svg>
+                        </a>
+                        <a class="footer__credits-item" href="#">
+                            <svg width="22" height="22" viewBox="0 0 22 22" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M21.5217 11.239C21.5217 5.48067 16.8101 0.811035 11 0.811035C5.18991 0.811035 0.478271 5.48067 0.478271 11.239C0.478271 16.9973 5.18991 21.667 11 21.667C11.0618 21.667 11.1233 21.6657 11.185 21.6646V13.5469H8.92443V10.9359H11.185V9.01453C11.185 6.78624 12.5575 5.57345 14.5631 5.57345C15.5235 5.57345 16.349 5.64441 16.5897 5.67607V8.00492H15.2067C14.1156 8.00492 13.9043 8.51888 13.9043 9.27294V10.9359H16.5133L16.1733 13.5469H13.9043V21.2641C18.3023 20.0145 21.5217 15.9988 21.5217 11.239Z"
+                                    fill="black" fill-opacity="0.7" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="js/jquery.formstyler.min.js"></script>
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <script src="js/jquery.rateyo.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
